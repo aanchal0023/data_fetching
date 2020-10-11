@@ -26,6 +26,7 @@ $result=mysqli_query($mysqli,"SELECT * FROM formdata ORDER BY id DESC");
 			<td></td></tr>
 			<tr><td style="text-align: center;"><input type="submit" name="submit" style="background-color:#00cc00; color: white;"></td></tr>
 	</form>
+		<div class="container">
 	<table border="0"><br>
 				<h4 style="text-align: center; background-color:#000099; color: white;">Result Data</h4>
 		<tr>
@@ -44,7 +45,7 @@ while($res=mysqli_fetch_array($result)){
 	echo '</tr>';
 }
 ?>
-</table>
+			</table></div>
 
 </body>
 </html>
