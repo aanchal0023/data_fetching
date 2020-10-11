@@ -48,9 +48,9 @@ $result=mysqli_query($mysqli,"SELECT * FROM formdata ORDER BY id DESC");
 			<tr><td style="padding-left: 15px;"><input type="submit" name="submit" style="background-color:#00cc00; color: white;"></td></tr>
 	</form></tbody></table></div>
 	<div class="container">
-	<table border="0"><br>
+	<table border="1" rules="rows"><br>
 				<h4 style="text-align: center; background-color:#000099; color: white;">Result Data</h4>
-		<tr>
+		<tr style="border-bottom: 1px solid black; border-top:1px solid black;">
 			<th style="width:375px;" > Name</th>
 			<th style="width:375px;">City</th>
 			<th style="width:375px;">Occupation</th>
