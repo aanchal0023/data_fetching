@@ -37,15 +37,15 @@ $result=mysqli_query($mysqli,"SELECT * FROM formdata ORDER BY id DESC");
 		
 			<tbody><tr>
 				
-				<td><b>Name:</b></td></tr>
-		<tr><td><input type="text" name="name" placeholder="Name"><br></td></tr>
-		<tr><td><b>City:</b></td></tr>
-		<tr><td><input type="" name="city" placeholder="City"><br></td></tr>
-		<tr><td><b>Occupation:</b></td></tr>
-		<tr><td><input type="" name="occupation" placeholder="Occupation"><br></td></tr>	
+				<td style="padding-left: 15px;"><b>Name:</b></td></tr>
+		<tr><td style="padding-left: 15px;"><input type="text" name="name" placeholder="Name" size="60"><br></td></tr>
+		<tr><td style="padding-left: 15px;"><b>City:</b></td></tr>
+		<tr><td style="padding-left: 15px;"><input type="" name="city" placeholder="City" size="60"><br></td></tr>
+		<tr><td style="padding-left: 15px;"><b>Occupation:</b></td></tr>
+		<tr><td style="padding-left: 15px;"><input type="" name="occupation" placeholder="Occupation" size="60"><br></td></tr>	
 		<tr>
 			<td></td></tr>
-			<tr><td><input type="submit" name="submit" style="background-color:#00cc00; color: white;"></td></tr>
+			<tr><td style="padding-left: 15px;"><input type="submit" name="submit" style="background-color:#00cc00; color: white;"></td></tr>
 	</form></tbody></table></div>
 	<div class="container">
 	<table border="0"><br>
