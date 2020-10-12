@@ -29,7 +29,7 @@ $result=mysqli_query($mysqli,"SELECT * FROM formdata ORDER BY id DESC");
     }
 </style>
 <body>
-	<form action="function.php" method="POST">
+	<form action="function.php" method="POST" onsubmit="formsubmit();">
 		<h3 style="text-align: center;"> Data Form</h3><br>
 		<div class="row">
 			<div class="column"></div>
@@ -67,6 +67,21 @@ while($res=mysqli_fetch_array($result)){
 }
 ?>
 </table></div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.1.1.js"></script>
+<script type="text/javascript">
+	function formsubmit(){
+		$.ajax({
+			type:'POST',
+			url:'function.php',
+			data:$('#frmBox').serialize(),
+			success:function(response){
+				$('#success').html(response);
+			}
+		});
+		var form=document.getElementById('frmBox').reset();
+		return false;
+	}
+	</script>
 
 </body>
 </html>
